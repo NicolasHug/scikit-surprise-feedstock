@@ -1,6 +1,6 @@
 {% set name = "scikit-surprise" %}
-{% set version = "1.1.4" %}
-{% set sha256 = "130c45feaee9de4b8cba0aff413ad9b51b2d5c5c90d41aee4759e00059913752" %}
+{% set version = "1.1.5" %}
+{% set sha256 = "bb64722d0e33f2a49738ada86dc20e0a725027f7dccc374a14b6ca743180171e" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
